@@ -27,5 +27,7 @@ A web chatbot client build with openapi offical apt
 
 `python3 backend/app.py`
 
+后台运行
+`nohup python3 backend/app.py &`
 
 nginx 前后端部署
