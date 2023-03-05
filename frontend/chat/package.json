@@ -1,0 +1,60 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@jansora/bytemd": "2.26.0",
+    "@jansora/market-chatbot": "2.26.3",
+    "@jansora/global": "2.26.0",
+    "@jansora/material": "2.26.1",
+    "ahooks": "^2.10.12",
+    "axios": "^0.24.0",
+    "dayjs": "^1.10.7",
+    "http-proxy-middleware": "^2.0.1",
+    "qs": "^6.10.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router": "^6.0.2",
+    "react-router-dom": "^6.0.2",
+    "react-scripts": "4.0.3",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.4",
+    "source-map-explorer": "^2.5.2",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@craco/craco": "^6.4.3",
+    "craco-less": "2.0.0",
+    "process": "^0.11.10"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "analyze": "source-map-explorer build/static/js/*.js",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
