@@ -6,7 +6,7 @@ import tornado.ioloop
 import tornado.web
 from openai.error import TryAgain
 
-token = os.getenv("OPENAPI_TOKEN")
+token = os.getenv("OPENAI_TOKEN")
 
 assert token is not None
 

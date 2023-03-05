@@ -16,8 +16,16 @@ A web chatbot client build with openapi offical apt
 
 ## 安装依赖
 
-`pip3 install openai==0.27.0 --upgrade -i https://mirrors.aliyun.com/pypi/simple/`
+`pip3 install tornado openai==0.27.0 --upgrade -i https://mirrors.aliyun.com/pypi/simple/`
 
 
 ## 部署
+指定环境变量
+`export OPENAI_TOKEN=sk-*` (替换成自己的)
 
+部署后端服务
+
+`python3 backend/app.py`
+
+
+nginx 前后端部署
