@@ -22,7 +22,9 @@ pkg
 
 
 dist
-build
+
+
+build/static
 backend/src/github.com/go-redis/redis/
 backend/src/github.com/ugorji/go/codec/codecgen/go.sum
 backend/src/github.com/ugorji/go/codec/go.sum
