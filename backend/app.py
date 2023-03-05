@@ -22,9 +22,9 @@ class ChatHandler(tornado.web.RequestHandler):
         if message:
             try:
                 print(f"ChatHandler chat start question={message}")
-                completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": message}], timeout=10)
+                completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=message, timeout=10)
+                print("ChatHandler chat start completion=: ", completion)
                 answer = completion.choices[0].message.content
-                print("ChatHandler chat start answer=: ", answer)
                 result = {'status': True, 'data': answer}
             except TryAgain as e:
                 print(e)
