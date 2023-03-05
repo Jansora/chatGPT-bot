@@ -1,8 +1,12 @@
 # chatbot
-A web chatbot client build with openapi offical apt
+A web chatbot client build with openapi offical api
+
+Demo: https://chatbot.jansora.com/
+
 
 1. 模仿微信聊天输入框
 2. 已适配移动端
+3. 已适配暗黑模式
 
 # 部署说明
 
@@ -30,4 +34,37 @@ A web chatbot client build with openapi offical apt
 后台运行
 `nohup python3 backend/app.py &`
 
-nginx 前后端部署
+nginx 前后端部署参考
+
+```nginx
+server {
+
+    listen 443 ssl http2;
+    server_name chatbot.jansora.com;
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+    ssl_certificate     /etc/nginx/certs/lets-encrypt-jansora.com/jansora.com.cer;
+    ssl_certificate_key /etc/nginx/certs/lets-encrypt-jansora.com/jansora.com.key;
+
+    location / {
+      root /data/ci/nginx/deploy/chatbot/dist;
+      try_files $uri /index.html;
+    }
+
+    location /api {
+      proxy_pass http://127.0.0.1:23386;
+    }
+
+}
+```
+
+
+# 部分截图
+
+Web
+![img.png](img/img.png)
+
+移动端
+
+![img.png](img.png)
+
+
