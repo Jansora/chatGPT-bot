@@ -25,7 +25,7 @@ const Layout = () => {
     const {pathname} = useLocation();
 
 
-    SetTitle("Chatbot(OpenAI)")
+    // SetTitle("Chatbot(OpenAI)")
     return <>
 
         <Routes >
