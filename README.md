@@ -61,10 +61,12 @@ server {
 # 部分截图
 
 Web
-![img.png](img/img.png)
+![img.png](img/img1.png)
 
 移动端
 
-![img.png](img.png)
+![img.png](img/img_2.png)
 
+日间模式
 
+![img_1.png](img/img_1.png)
