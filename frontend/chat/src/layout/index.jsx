@@ -8,6 +8,7 @@ import Chatbot from "@jansora/market-chatbot/lib/chatbot/Chat";
 import MaterialHeader from "./header";
 import Footer from "./footer";
 import SetTitle from "@jansora/material/es/hooks/setter/SetTitle";
+import {useResponsive} from "ahooks";
 
 /**
  * <Description> Description for index <br>
@@ -24,7 +25,9 @@ const Layout = () => {
 
     const {pathname} = useLocation();
 
+    const responsive = useResponsive();
 
+    const mobile = !responsive.middle
     // SetTitle("Chatbot(OpenAI)")
     return <>
 
@@ -33,8 +36,10 @@ const Layout = () => {
 
         </Routes>
 
-        <Footer>
-        </Footer>
+        {
+            !mobile && <Footer/>
+        }
+
     </>;
 }
 

@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@jansora/bytemd": "2.26.0",
-    "@jansora/market-chatbot": "2.26.4",
+    "@jansora/market-chatbot": "2.26.6",
     "@jansora/global": "2.26.0",
     "@jansora/material": "2.26.1",
     "ahooks": "^2.10.12",
