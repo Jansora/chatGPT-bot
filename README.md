@@ -70,3 +70,8 @@ Web
 日间模式
 
 ![img_1.png](img/img_1.png)
+
+# QA
+
+如果你需要定制化开发前端, 前端有引用部分私有仓库包, 私有仓库包的源代码在 https://github.com/Jansora/packages
+, 如何下载私有仓库包请查阅 https://share.jansora.com/notebook/a2eea824fbb06884b8abb5e35d579aaf
